@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+	<style>.color{fill:#fff;}</style>
+	<rect fill="none" width="20" height="20"/>
+	<path class="color" d="M14,11h1v6H3V5h6v1H4v10h10V11z M16,3h-5v1h4.3L9,10.3L9.7,11L16,4.7V9h1V4V3H16z"/>
+</svg>
