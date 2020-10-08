@@ -8,7 +8,7 @@
 		.letter-border{fill:#FFFFFF;opacity:0.33;}
 		@media (prefers-color-scheme: dark) {
 			.letter-inner-border{fill:#000000;opacity:0.83;}
-			.letter{fill: #000000;}
+			.letter{fill: #ffffff;}
 			.letter-border{fill:#000000;opacity:0.33;}
 		}
 	</style>
