@@ -1,0 +1,737 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+    </head>
+
+    <style>
+
+        *, body {
+          margin: 0;
+          padding: 0;
+          outline: none;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+        @media (min-width: 0px) and (max-width: 639px) {
+
+            body h1 {
+                font-size: 30px;
+                line-height: 40px;
+                margin: 10px 15px 0;
+            }
+
+            body h2 {
+                font-size: 30px;
+                line-height: 40px;
+                margin: 10px 15px 0;
+            }
+
+            body h3 {
+              font-size: 15px;
+              line-height: 20px;
+              margin: 10px 15px 0;
+            }
+
+            body p {
+              font-size: 15px;
+              line-height: 20px;
+              margin: 10px 15px 15px;
+            }
+
+            body .bo-main {
+              padding: 0 0 115px
+            }
+
+            .bo-main .bo-logo {
+                width: 140px;
+                margin: 15px 15px 30px;
+            }
+
+            .bo-main .bo-main-description {
+              margin-bottom: 30px;
+            }
+
+            body .bo-about .bo-adaptive-block {
+              margin-bottom: 50px;
+            }
+
+            .bo-block  .bo-adaptive-block {
+                min-width: 290px;
+            }
+
+            body .bo-about .bo-about-item:nth-child(even) .bo-adaptive-block-50-percent:last-child {
+              order: 1;
+            }
+
+            .bo-adaptive-block .bo-about-item {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            .bo-about .bo-adaptive-block-50-percent img {
+              width: 200px;
+              margin: 45px 15px 0;
+            }
+
+            .bo-about-item .bo-adaptive-block-50-percent {
+              width: 100%;
+            }
+
+            .bo-block .bo-adaptive-block-60-percent {
+              width: calc(100% - 30px);
+            }
+
+            .bo-block .bo-adaptive-block-40-percent {
+              width: calc(100% - 30px);
+            }
+
+            .bo-block .bo-container {
+              flex-direction: column;
+            }
+
+            .bo-container .bo-card {
+              width: calc(100% - 60px);
+              padding-top: 45px;
+            }
+
+            .bo-advantages .bo-illustration-dashed-pin {
+              top: 40%;
+            }
+
+            body .bo-registration .bo-adaptive-block {
+              margin-top: 30px;
+              margin-bottom: 50px;
+            }
+
+            .bo-registration .bo-list-number {
+              top: -15px;
+              width: 40px;
+              height: 65px;
+              font-size: 50px;
+              line-height: 50px;
+              background-position: 0 10px;
+            }
+
+            .bo-registration .bo-registration-form {
+              width: 100%;
+              margin-top: 0;
+              margin-left: 0;
+            }
+
+            .bo-registration .bo-download-form {
+              width: 100%;
+              margin-top: 0;
+              margin-left: 0;
+            }
+
+            .bo-block .bo-button-big {
+              width: calc(100% - 70px);
+              padding: 20px;
+            }
+
+            .bo-block .bo-button-small {
+              width: calc(100% - 50px);
+              padding: 10px;
+            }
+
+            .bo-block .bo-button-submit {
+              width: calc(100% - 30px);
+              padding: 20px;
+            }
+
+        }
+
+        @media (min-width: 640px) and (max-width: 959px) {
+
+            .bo-block .bo-adaptive-block {
+              max-width: 900px;
+              margin: 0 15px;
+            }
+
+            .bo-main .bo-logo {
+                margin: 30px 15px 50px;
+            }
+
+            body .bo-main {
+              padding: 0 0 180px
+            }
+
+            body .bo-about .bo-adaptive-block {
+              margin-top: 50px;
+              margin-bottom: 80px;
+            }
+
+            body .bo-registration .bo-adaptive-block {
+              margin-top: 80px;
+              margin-bottom: 180px;
+            }
+
+            .bo-container .bo-card {
+              width: calc(100% / 2 - 60px);
+            }
+
+            .bo-advantages .bo-illustration-dashed-pin {
+              top: 35%;
+            }
+
+            .bo-registration .bo-registration-form {
+              width: 100%;
+              margin-top: 0;
+              margin-left: 0;
+            }
+
+            .bo-registration .bo-download-form {
+              width: 100%;
+              margin-top: 0;
+              margin-left: 0;
+            }
+
+            .bo-block .bo-button-submit {
+              padding: 20px 50px;
+            }
+
+        }
+
+        @media (min-width: 960px) and (max-width: 1279px) {
+
+            .bo-block .bo-adaptive-block {
+              min-width: 900px;
+              margin: 0 15px;
+            }
+
+            .bo-main .bo-logo {
+                margin: 30px 15px 50px;
+            }
+
+            body .bo-main {
+              padding: 0 0 250px
+            }
+
+            body .bo-about .bo-adaptive-block {
+              margin-top: 30px;
+              margin-bottom: 130px;
+            }
+
+            body .bo-registration .bo-adaptive-block {
+              margin-top: 130px;
+              margin-bottom: 210px;
+            }
+
+            .bo-container .bo-card {
+              width: calc(100% / 2 - 60px);
+            }
+
+            .bo-advantages .bo-illustration-dashed-pin {
+              top: 30%;
+            }
+
+        }
+
+        @media (min-width: 1280px) {
+
+            .bo-block .bo-adaptive-block {
+              max-width: 1200px;
+            }
+
+        }
+
+        h1 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 60px;
+            line-height: 75px;
+            font-weight: 700;
+            color: #fff;
+            margin: 15px 15px 0;
+        }
+
+        h2 {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 50px;
+            line-height: 60px;
+            font-weight: 700;
+            color: #333;
+            margin: 15px 15px 0;
+        }
+
+        h3 {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 600;
+          color: #333;
+          margin: 15px 15px 0;
+        }
+
+        p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 300;
+          color: #333;
+          margin: 15px;
+        }
+
+        .bo-block {
+          width: 100%;
+          padding: 0 0 50px;
+        }
+
+        .bo-adaptive-block {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          margin: 0 auto;
+        }
+
+        .bo-flex-column {
+          flex-direction: column;
+        }
+
+        /* Main */
+
+        .bo-main {
+          background: none;
+          height: 100%;
+          margin: 0;
+          padding: 0 0 310px;
+          background-size: contain;
+          background: url('https://ze37ui.github.io/bro.online/background/bo-background-dark-top.svg') 0% 101%/101% no-repeat, linear-gradient(to bottom right, rgba(54, 90, 119, 1), rgba(54, 90, 119, 0.3)), url('https://st3.depositphotos.com/6200870/16880/i/1600/depositphotos_168808460-stock-photo-modern-classic-style-interior-bedroom.jpg') bottom/cover no-repeat;
+        }
+
+        .bo-logo {
+            display: block;
+            width: 190px;
+            margin: 30px 15px 80px;
+        }
+
+        .bo-main-description {
+          color: #ffffff;
+          display: block;
+          margin-bottom: 50px;
+        }
+
+        .bo-button {
+          display: inline-block;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          cursor: pointer;
+          margin: 0 15px 15px;
+          text-align: center;
+          text-decoration: none;
+        }
+
+        .bo-button-big {
+          padding: 20px 80px;
+          font-size: 15px;
+          line-height: 20px;
+          border-radius: 10px;
+        }
+
+        .bo-button-primary {
+          background-color: #169DA7;
+          color: #ffffff;
+          border: none;
+          transition: all 125ms ease-out;
+        }
+
+        .bo-button-primary:hover {
+          background-color: #107C84;
+          transition: all 175ms ease-out;
+        }
+
+        .bo-search-block {
+          width: calc(100% - 30px);
+          height: 136px;
+          background-color: #fff;
+          margin: 0 15px 15px;
+          border-radius: 10px;
+        }
+
+        /* About */
+
+        .bo-about {
+          background: url('https://ze37ui.github.io/bro.online/background/bo-background-light-top.svg'), #fff;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        .bo-about .bo-adaptive-block {
+          margin-bottom: 210px;
+        }
+
+        .bo-about .bo-about-item:nth-child(even) .bo-adaptive-block-50-percent:last-child {
+          order: -1;
+        }
+
+        .bo-about-item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        .bo-adaptive-block-50-percent {
+          width: 50%;
+        }
+
+        .bo-adaptive-block-50-percent img {
+          width: calc(100% - 30px);
+          margin: 30px 15px;
+        }
+
+        /* Advantages */
+
+        .bo-advantages {
+          position: relative;
+          background: url('https://ze37ui.github.io/bro.online/background/bo-background-dark-bottom.svg') 0% 101%/101% no-repeat, #F1F7F8;
+        }
+
+        .bo-illustration-dashed-pin {
+          position: absolute;
+          top: 12.5%;
+          right: calc(-308px + 30%);
+        }
+
+        .bo-container {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 15px;
+        }
+
+        .bo-card {
+          width: calc(100% / 3 - 60px);
+          margin: 30px 15px;
+          padding: 15px;
+          padding-top: 60px;
+          border-radius: 20px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          position: relative;
+          background-color: #ffffff;
+        }
+
+        .bo-card img {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          left: 30px;
+          top: -15px;
+        }
+
+        /* Registration */
+
+        .bo-registration {
+          background: url('https://ze37ui.github.io/bro.online/background/bo-background-dark-bottom.svg') 0% 101%/101% no-repeat;
+        }
+
+        .bo-registration .bo-adaptive-block {
+          margin-top: 130px;
+          margin-bottom: 310px;
+        }
+
+        .bo-adaptive-block-60-percent {
+          display: flex;
+          flex-direction: column;
+          width: calc(60% - 30px);
+          margin: 15px;
+        }
+
+        .bo-adaptive-block-40-percent {
+          display: flex;
+          flex-direction: column;
+          width: calc(40% - 30px);
+          margin: 15px;
+        }
+
+        .bo-list {
+          display: flex;
+          width: calc(100% - 30px);
+          margin-top: 15px;
+        }
+
+        .bo-list-number {
+          display: inline-flex;
+          flex-shrink: 0;
+          position: relative;
+          top: -15px;
+          width: 60px;
+          height: 100px;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 80px;
+          font-weight: 700;
+          line-height: 80px;
+          color: #107C84;
+          background: url('https://ze37ui.github.io/bro.online/illustrations/bo-list-pin.svg') top left/contain no-repeat;
+          background-position: 0 20px;
+        }
+
+        .bo-registration-form {
+          width: calc(100% - 75px);
+          box-sizing: border-box;
+          margin-top: -30px;
+          margin-left: 75px;
+          padding: 30px 15px 15px;
+          border-radius: 20px;
+          border: 2px dashed #C5DCDE;
+          background-color: #F1F7F8;
+        }
+
+        .bo-input-group {
+          margin: 0 15px 20px;
+        }
+
+        .bo-input-header {
+          font-family: 'Open Sans', sans-sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 20px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        .bo-input-field {
+          font-family: 'Open Sans', sans-sans-serif;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 45px;
+          color: #333;
+          box-sizing: border-box;
+          border: 1px solid #d3ddde;
+          border-radius: 5px;
+          height: 45px;
+          width: 100%;
+          padding: 0 15px;
+        }
+
+        .bo-input-error {
+          margin-top: 10px;
+        }
+
+        .bo-input-checkbox {
+          flex-shrink: 0;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #d3ddde;
+          border-radius: 5px;
+          color: #333;
+          vertical-align: top;
+          z-index: -1;
+          opacity: 0;
+        }
+
+        .bo-input-checkbox + span::before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left:0;
+          flex-shrink: 0;
+          box-sizing: border-box;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #d3ddde;
+          background-color: #fff;
+          border-radius: 5px;
+        }
+
+        .bo-input-checkbox:checked + span::before {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cstyle%3E.color%7Bfill:%23169DA7;%7D%3C/style%3E%3Crect fill='none' width='20' height='20'/%3E%3Cpolygon class='color' points='17,6.4 15.6,5 7.8,12.8 4.4,9.4 3,10.8 7.8,15.6 '/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        .bo-input-checkbox_label {
+          position: relative;
+          display: flex;
+          cursor: pointer;
+        }
+
+        .bo-input-checkbox_label span {
+          display: inline-block;
+          font-family: 'Open Sans', sans-sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 20px;
+          color: #333;
+          margin: 5px 0;
+          margin-left: 10px;
+          vertical-align: top;
+        }
+
+        .bo-button-submit {
+          padding: 20px 80px;
+          font-size: 15px;
+          line-height: 20px;
+          border-radius: 10px;
+          background-color: #365a77;
+          color: #ffffff;
+          border: none;
+          margin-top: 30px;
+          transition: all 125ms ease-out;
+        }
+
+        .bo-button-submit:hover {
+          background-color: #1F3A51;
+          transition: all 175ms ease-out;
+        }
+
+        .bo-download-form {
+          width: calc(100% - 75px);
+          box-sizing: border-box;
+          margin-top: -30px;
+          margin-left: 75px;
+          padding: 15px;
+          border-radius: 20px;
+          border: 2px solid #F1F7F8;
+          background-color: #ffffff;
+        }
+
+        .bo-button-small {
+          padding: 10px 50px;
+          font-size: 15px;
+          line-height: 20px;
+          border-radius: 10px;
+        }
+
+        .bo-button-secondary {
+          background-color: #fff;
+          color: #169DA7;
+          border: 2px solid #169DA7;
+          transition: all 125ms ease-out;
+        }
+
+        .bo-button-secondary:hover {
+          background-color: #F1F7F8;
+          border-color: #107C84;
+          color: #107C84;
+          transition: all 175ms ease-out;
+        }
+
+        .bo-link {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          color: #333;
+          text-decoration: underline;
+          cursor: pointer;
+          transition: all 125ms ease-out;
+        }
+
+        .bo-link:hover {
+          text-decoration: none;
+          transition: all 175ms ease-out;
+        }
+
+    </style>
+
+    <body>
+
+      <div class="bo-main bo-block">
+        <div class="bo-adaptive-block bo-flex-column">
+          <a href="https://cashback.bronevik.com/?utm_source=cashbacksite&utm_medium=logo&utm_campaign=cashback">
+              <img class="bo-logo" alt="Логотип «Bronevik.com совместно с МИР»" src="https://ze37ui.github.io/bro.online/logo/bro-online-logo-light-wl.svg" />
+          </a>
+          <h1>Отели Украины по&nbsp;закрытым тарифам только для&nbsp;турагентов</h1>
+          <p class="bo-main-description">Получите доступ к&nbsp;новой локальной B2B-платформе первыми</p>
+          <div class="bo-search-block">
+            <!-- place for SEARCH -->
+          </div>
+        </div>
+      </div>
+
+      <div class="bo-about bo-block">
+        <div class="bo-adaptive-block">
+          <div class="bo-about-item">
+            <div class="bo-adaptive-block-50-percent">
+              <img src="https://ze37ui.github.io/bro.online/illustrations/illustration-1.png" />
+            </div>
+            <div class="bo-adaptive-block-50-percent">
+              <h2>Прямые контракты</h2>
+              <p>Прямой контракт с&nbsp;отелем позволяет нам предлагать лучшие цены на&nbsp;рынке и&nbsp;только качественный отельный контент</p>
+            </div>
+          </div>
+          <div class="bo-about-item">
+            <div class="bo-adaptive-block-50-percent">
+              <img src="https://ze37ui.github.io/bro.online/illustrations/illustration-2.png" />
+            </div>
+            <div class="bo-adaptive-block-50-percent">
+              <h2>Реальный онлайн</h2>
+              <p>Отели загружают актуальную доступность и&nbsp;цены через личный кабинет или&nbsp;Channel Manager. Мы&nbsp;гарантируем мгновенное подтверждение бронирования</p>
+            </div>
+          </div>
+          <div class="bo-about-item">
+            <div class="bo-adaptive-block-50-percent">
+              <img src="https://ze37ui.github.io/bro.online/illustrations/illustration-3.png" />
+            </div>
+            <div class="bo-adaptive-block-50-percent">
+              <h2>Технологии</h2>
+              <p>Автоматический расчет раннего заезда&nbsp;/ позднего выезда, заказа дополнительного питания, бронирование онлайн и&nbsp;под&nbsp;запрос</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bo-advantages bo-block">
+        <img class="bo-illustration-dashed-pin" src="https://ze37ui.github.io/bro.online/illustrations/bo-illustration-dashed-pin.svg" />
+        <div class="bo-adaptive-block bo-flex-column">
+            <h2>Преимущества партнерства</h2>
+            <p>Мы предлагаем вашей команде удобные инструменты для&nbsp;организации проживания</p>
+            <div class="bo-container">
+                <div class="bo-card">
+                    <img src="https://ze37ui.github.io/bro.online/icons/icon-1.svg" alt="">
+                    <h3>Оплата</h3>
+                    <p>На этапе оформления заказа вы можете выбрать подходящий способ оплаты&nbsp;— по&nbsp;счету или&nbsp;на&nbsp;месте</p>
+                </div>
+                <div class="bo-card">
+                    <img src="https://ze37ui.github.io/bro.online/icons/icon-2.svg" alt="">
+                    <h3>Понятный интерфейс</h3>
+                    <p>Интуитивный и простой интерфейс. Не&nbsp;нужно проходить обучение&nbsp;— можно сразу приступать к&nbsp;работе</p>
+                </div>
+                <div class="bo-card">
+                    <img src="https://ze37ui.github.io/bro.online/icons/icon-3.svg" alt="">
+                    <h3>Полная информация об&nbsp;отеле</h3>
+                    <p>Мы транслируем официально опубликованные тарифы гостиниц, дополнительные услуги, комплекс профилактических мер против COVID-19</p>
+                </div>
+                <div class="bo-card">
+                    <img src="https://ze37ui.github.io/bro.online/icons/icon-4.svg" alt="">
+                    <h3>Кастомизированные ваучеры</h3>
+                    <p>Подтверждения бронирования создаются с&nbsp;логотипом вашей компании</p>
+                </div>
+                <div class="bo-card">
+                    <img src="https://ze37ui.github.io/bro.online/icons/icon-5.svg" alt="">
+                    <h3>Комиссионное вознаграждение</h3>
+                    <p>Получайте комиссию за&nbsp;бронирование до&nbsp;20%</p>
+                </div>
+                <div class="bo-card">
+                    <img src="https://ze37ui.github.io/bro.online/icons/icon-6.svg" alt="">
+                    <h3>Интеграция через API</h3>
+                    <p>Полный цикл бронирования. Возможность получать данные в&nbsp;вашем бэк-офисе</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </body>
+
+    <script type="text/javascript">
+
+      const link = document.getElementById("linkToForm");
+
+      link.addEventListener("click", clickHandler);
+
+      function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop - 200;
+
+        scroll({
+          top: offsetTop,
+          behavior: "smooth"
+        });
+
+      }
+
+    </script>
+</html>
