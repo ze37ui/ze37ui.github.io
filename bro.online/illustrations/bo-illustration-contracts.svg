@@ -1,18 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="570" height="400" viewBox="0 0 570 400">
   <defs>
     <path id="bo-illustration-contracts-b" d="M10,0 L100,0 L120,20 L220,20 C225.522847,20 230,24.4771525 230,30 L230,280 C230,285.522847 225.522847,290 220,290 L10,290 C4.4771525,290 3.25606345e-14,285.522847 0,280 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z"/>
-    <filter id="bo-illustration-contracts-a" width="122.2%" height="117.6%" x="-11.1%" y="-5.3%" filterUnits="objectBoundingBox">
-      <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="shadowSpreadOuter1"/>
-      <feOffset dy="5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+    <filter id="bo-illustration-contracts-a" width="193%" height="173.8%" x="-46.5%" y="-25.9%" filterUnits="objectBoundingBox">
+      <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
       <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
-      <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter2"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter2"/>
       <feOffset dy="5" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
-      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="2.5"/>
-      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.01 0"/>
+      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="17.5"/>
+      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.02 0"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="shadowSpreadOuter3"/>
+      <feOffset dy="16" in="shadowSpreadOuter3" result="shadowOffsetOuter3"/>
+      <feGaussianBlur in="shadowOffsetOuter3" result="shadowBlurOuter3" stdDeviation="12.5"/>
+      <feColorMatrix in="shadowBlurOuter3" result="shadowMatrixOuter3" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
       <feMerge>
         <feMergeNode in="shadowMatrixOuter1"/>
         <feMergeNode in="shadowMatrixOuter2"/>
+        <feMergeNode in="shadowMatrixOuter3"/>
       </feMerge>
     </filter>
     <ellipse id="bo-illustration-contracts-d" cx="87.5" cy="328.5" rx="7.5" ry="7.5"/>
@@ -103,12 +107,12 @@
     <ellipse cx="177.001" cy="339.001" fill="#FFF" fill-rule="nonzero" rx="25" ry="25.001"/>
     <path fill="#C5DCDE" fill-rule="nonzero" d="M177.000842,365.002476 C162.641427,365.002476 151.000842,353.361314 151.000842,339.001238 C151.000842,324.641162 162.641427,313 177.000842,313 C191.360256,313 203.000842,324.641162 203.000842,339.001238 C203.000842,353.361314 191.360256,365.002476 177.000842,365.002476 Z M177.000842,363.002476 C190.255665,363.002476 201.000842,352.256767 201.000842,339.001238 C201.000842,325.745709 190.255665,315 177.000842,315 C163.746019,315 153.000842,325.745709 153.000842,339.001238 C153.000842,352.256767 163.746019,363.002476 177.000842,363.002476 Z"/>
     <path fill="#C5DCDE" fill-rule="nonzero" d="M177,352.001188 C169.820287,352.001188 164,346.180613 164,339.000594 C164,331.820575 169.820287,326 177,326 C184.179713,326 190,331.820575 190,339.000594 C190,346.180613 184.179713,352.001188 177,352.001188 Z M177,350.001188 C183.075121,350.001188 188,345.076066 188,339.000594 C188,332.925123 183.075121,328 177,328 C170.924879,328 166,332.925123 166,339.000594 C166,345.076066 170.924879,350.001188 177,350.001188 Z"/>
-    <g fill-rule="nonzero" transform="translate(318 83)">
+    <g fill-rule="nonzero" transform="translate(297 62)">
       <use fill="#000" filter="url(#bo-illustration-contracts-a)" xlink:href="#bo-illustration-contracts-b"/>
       <use fill="#FFF" xlink:href="#bo-illustration-contracts-b"/>
       <path fill="#F7F7F7" d="M10,-3.37507799e-15 L100,-1.77635684e-15 L120,20 L0,20 L0,10 C-6.76353751e-16,4.4771525 4.4771525,-4.31453989e-15 10,-5.32907052e-15 Z"/>
     </g>
-    <g fill-rule="nonzero" transform="translate(288 128)">
+    <g fill-rule="nonzero" transform="translate(267 107)">
       <rect width="180" height="230" fill="#F1F7F8" rx="10"/>
       <rect width="100" height="10" x="15" y="25.002" fill="#BADBDD" rx="5"/>
       <rect width="150" height="10" x="15" y="60" fill="#BADBDD" rx="5"/>
@@ -174,6 +178,6 @@
         </g>
       </g>
     </g>
-    <path fill="#169DA7" fill-rule="nonzero" d="M1.75304952 7.80868809L8 0 14.2469505 7.80868809C15.381754 9.22719248 16 10.9896765 16 12.8062485L16 156C16 158.209139 14.209139 160 12 160L4 160C1.790861 160-1.57166701e-14 158.209139-1.59872116e-14 156L-1.77635684e-14 12.8062485C-1.79860343e-14 10.9896765.618246016 9.22719248 1.75304952 7.80868809zM5 162L11 162 11 166C11 167.656854 9.65685425 169 8 169L8 169C6.34314575 169 5 167.656854 5 166L5 162zM20 148C20 149.104569 19.1045695 150 18 150 16.8954305 150 16 149.104569 16 148L16 137.323905 16.4102253 136.786486C22.8295881 128.376743 26 120.450713 26 113 26 108.084979 24.7223015 102.870793 22.2144571 97.9010198 21.7168376 96.9148917 22.1128521 95.7120766 23.0989802 95.2144571 24.0851083 94.7168376 25.2879234 95.1128521 25.7855429 96.0989802 28.5714107 101.61971 30 107.449669 30 113 30 121.247077 26.6420247 129.80675 20 138.671114L20 148z" transform="translate(493 221)"/>
+    <path fill="#169DA7" fill-rule="nonzero" d="M1.75304952 7.80868809L8 0 14.2469505 7.80868809C15.381754 9.22719248 16 10.9896765 16 12.8062485L16 156C16 158.209139 14.209139 160 12 160L4 160C1.790861 160-1.57166701e-14 158.209139-1.59872116e-14 156L-1.77635684e-14 12.8062485C-1.79860343e-14 10.9896765.618246016 9.22719248 1.75304952 7.80868809zM5 162L11 162 11 166C11 167.656854 9.65685425 169 8 169L8 169C6.34314575 169 5 167.656854 5 166L5 162zM20 148C20 149.104569 19.1045695 150 18 150 16.8954305 150 16 149.104569 16 148L16 137.323905 16.4102253 136.786486C22.8295881 128.376743 26 120.450713 26 113 26 108.084979 24.7223015 102.870793 22.2144571 97.9010198 21.7168376 96.9148917 22.1128521 95.7120766 23.0989802 95.2144571 24.0851083 94.7168376 25.2879234 95.1128521 25.7855429 96.0989802 28.5714107 101.61971 30 107.449669 30 113 30 121.247077 26.6420247 129.80675 20 138.671114L20 148z" transform="translate(472 200)"/>
   </g>
 </svg>
