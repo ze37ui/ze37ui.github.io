@@ -135,11 +135,11 @@
         <use fill="#000" filter="url(#bo-illustration-contracts-g)" xlink:href="#bo-illustration-contracts-h"/>
         <use fill="#FFF" xlink:href="#bo-illustration-contracts-h"/>
       </g>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="38 7.5 36.237 8.427 36.573 6.464 35.147 5.073 37.118 4.786 38 3 38.882 4.786 40.853 5.073 39.427 6.464 39.763 8.427"/>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="48 9.5 46.237 10.427 46.573 8.464 45.147 7.073 47.118 6.786 48 5 48.882 6.786 50.853 7.073 49.427 8.464 49.763 10.427"/>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="28 9.5 26.237 10.427 26.573 8.464 25.147 7.073 27.118 6.786 28 5 28.882 6.786 30.853 7.073 29.427 8.464 29.763 10.427"/>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="57 13.5 55.237 14.427 55.573 12.464 54.147 11.073 56.118 10.786 57 9 57.882 10.786 59.853 11.073 58.427 12.464 58.763 14.427"/>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="19 14.5 17.237 15.427 17.573 13.464 16.147 12.073 18.118 11.786 19 10 19.882 11.786 21.853 12.073 20.427 13.464 20.763 15.427"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="38 9 35.649 10.236 36.098 7.618 34.196 5.764 36.824 5.382 38 3 39.176 5.382 41.804 5.764 39.902 7.618 40.351 10.236"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="48 11 45.649 12.236 46.098 9.618 44.196 7.764 46.824 7.382 48 5 49.176 7.382 51.804 7.764 49.902 9.618 50.351 12.236"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="28 11 25.649 12.236 26.098 9.618 24.196 7.764 26.824 7.382 28 5 29.176 7.382 31.804 7.764 29.902 9.618 30.351 12.236"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="57 15 54.649 16.236 55.098 13.618 53.196 11.764 55.824 11.382 57 9 58.176 11.382 60.804 11.764 58.902 13.618 59.351 16.236"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="19 16 16.649 17.236 17.098 14.618 15.196 12.764 17.824 12.382 19 10 20.176 12.382 22.804 12.764 20.902 14.618 21.351 17.236"/>
       <g transform="translate(13 13)">
         <mask id="bo-illustration-contracts-j" fill="#fff">
           <use xlink:href="#bo-illustration-contracts-i"/>
@@ -161,9 +161,9 @@
         <use fill="#000" filter="url(#bo-illustration-contracts-k)" xlink:href="#bo-illustration-contracts-l"/>
         <use fill="#FFF" xlink:href="#bo-illustration-contracts-l"/>
       </g>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="38 7.5 36.237 8.427 36.573 6.464 35.147 5.073 37.118 4.786 38 3 38.882 4.786 40.853 5.073 39.427 6.464 39.763 8.427"/>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="48 9.5 46.237 10.427 46.573 8.464 45.147 7.073 47.118 6.786 48 5 48.882 6.786 50.853 7.073 49.427 8.464 49.763 10.427"/>
-      <polygon fill="#FFBF00" fill-rule="nonzero" points="28 9.5 26.237 10.427 26.573 8.464 25.147 7.073 27.118 6.786 28 5 28.882 6.786 30.853 7.073 29.427 8.464 29.763 10.427"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="38 9 35.649 10.236 36.098 7.618 34.196 5.764 36.824 5.382 38 3 39.176 5.382 41.804 5.764 39.902 7.618 40.351 10.236"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="48 11 45.649 12.236 46.098 9.618 44.196 7.764 46.824 7.382 48 5 49.176 7.382 51.804 7.764 49.902 9.618 50.351 12.236"/>
+      <polygon fill="#FFBF00" fill-rule="nonzero" points="28 11 25.649 12.236 26.098 9.618 24.196 7.764 26.824 7.382 28 5 29.176 7.382 31.804 7.764 29.902 9.618 30.351 12.236"/>
       <g transform="translate(13 13)">
         <mask id="bo-illustration-contracts-n" fill="#fff">
           <use xlink:href="#bo-illustration-contracts-m"/>
