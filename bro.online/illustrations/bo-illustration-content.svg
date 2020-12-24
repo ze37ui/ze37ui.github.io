@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="500" viewBox="0 0 350 500">
+  <defs>
+    <path id="bo-illustration-content-b" d="M123,50 L227,50 L227,60 C227,65.5228475 222.522847,70 217,70 L133,70 C127.477153,70 123,65.5228475 123,60 L123,50 Z"/>
+    <filter id="bo-illustration-content-a" width="305.8%" height="1170%" x="-102.9%" y="-375%" filterUnits="objectBoundingBox">
+      <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter2"/>
+      <feOffset dy="5" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="17.5"/>
+      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.02 0"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="shadowSpreadOuter3"/>
+      <feOffset dy="16" in="shadowSpreadOuter3" result="shadowOffsetOuter3"/>
+      <feGaussianBlur in="shadowOffsetOuter3" result="shadowBlurOuter3" stdDeviation="12.5"/>
+      <feColorMatrix in="shadowBlurOuter3" result="shadowMatrixOuter3" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+        <feMergeNode in="shadowMatrixOuter3"/>
+      </feMerge>
+    </filter>
+    <path id="bo-illustration-content-d" d="M113,50 L113,65 C113,73.2842712 119.715729,80 128,80 L222,80 C230.284271,80 237,73.2842712 237,65 L237,50 L280,50 C285.522847,50 290,54.4771525 290,60 L290,440 C290,445.522847 285.522847,450 280,450 L70,450 C64.4771525,450 60,445.522847 60,440 L60,60 C60,54.4771525 64.4771525,50 70,50 L113,50 Z"/>
+    <filter id="bo-illustration-content-c" width="130.4%" height="117.5%" x="-15.2%" y="-6.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0"/>
+    </filter>
+    <ellipse id="bo-illustration-content-e" cx="40" cy="40.002" rx="40" ry="40.002"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="350" height="500"/>
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#bo-illustration-content-a)" xlink:href="#bo-illustration-content-b"/>
+      <use fill="#F7F7F7" xlink:href="#bo-illustration-content-b"/>
+    </g>
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#bo-illustration-content-c)" xlink:href="#bo-illustration-content-d"/>
+      <use fill="#FFF" xlink:href="#bo-illustration-content-d"/>
+    </g>
+    <rect width="180" height="10" x="85" y="268" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="150" height="10" x="85" y="298" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="165" height="10" x="85" y="328" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="160" height="10" x="85" y="358" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="80" height="10" x="85" y="410" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="50" height="10" x="215" y="410" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <g transform="translate(135 120)">
+      <mask id="bo-illustration-content-f" fill="#fff">
+        <use xlink:href="#bo-illustration-content-e"/>
+      </mask>
+      <use fill="#F1F7F8" fill-rule="nonzero" xlink:href="#bo-illustration-content-e"/>
+      <g mask="url(#bo-illustration-content-f)">
+        <g transform="translate(15.969 9.38)">
+          <polygon fill="#BADBDD" points="3.231 70.619 44.831 70.619 44.831 17.819 3.231 17.819"/>
+          <path fill="#DAF0F1" d="M10.6313725 35.4190641L19.8313725 35.4190641C20.3836573 35.4190641 20.8313725 34.9713489 20.8313725 34.4190641L20.8313725 25.2190641C20.8313725 24.6667794 20.3836573 24.2190641 19.8313725 24.2190641L10.6313725 24.2190641C10.0790878 24.2190641 9.63137255 24.6667794 9.63137255 25.2190641L9.63137255 34.4190641C9.63137255 34.9713489 10.0790878 35.4190641 10.6313725 35.4190641zM28.2313725 35.4190641L37.4313725 35.4190641C37.9836573 35.4190641 38.4313725 34.9713489 38.4313725 34.4190641L38.4313725 25.2190641C38.4313725 24.6667794 37.9836573 24.2190641 37.4313725 24.2190641L28.2313725 24.2190641C27.6790878 24.2190641 27.2313725 24.6667794 27.2313725 25.2190641L27.2313725 34.4190641C27.2313725 34.9713489 27.6790878 35.4190641 28.2313725 35.4190641zM10.6313725 53.0190641L19.8313725 53.0190641C20.3836573 53.0190641 20.8313725 52.5713489 20.8313725 52.0190641L20.8313725 42.8190641C20.8313725 42.2667794 20.3836573 41.8190641 19.8313725 41.8190641L10.6313725 41.8190641C10.0790878 41.8190641 9.63137255 42.2667794 9.63137255 42.8190641L9.63137255 52.0190641C9.63137255 52.5713489 10.0790878 53.0190641 10.6313725 53.0190641zM28.2313725 53.0190641L37.4313725 53.0190641C37.9836573 53.0190641 38.4313725 52.5713489 38.4313725 52.0190641L38.4313725 42.8190641C38.4313725 42.2667794 37.9836573 41.8190641 37.4313725 41.8190641L28.2313725 41.8190641C27.6790878 41.8190641 27.2313725 42.2667794 27.2313725 42.8190641L27.2313725 52.0190641C27.2313725 52.5713489 27.6790878 53.0190641 28.2313725 53.0190641zM10.6313725 70.6190641L19.8313725 70.6190641C20.3836573 70.6190641 20.8313725 70.1713489 20.8313725 69.6190641L20.8313725 60.4190641C20.8313725 59.8667794 20.3836573 59.4190641 19.8313725 59.4190641L10.6313725 59.4190641C10.0790878 59.4190641 9.63137255 59.8667794 9.63137255 60.4190641L9.63137255 69.6190641C9.63137255 70.1713489 10.0790878 70.6190641 10.6313725 70.6190641zM28.2313725 70.6190641L37.4313725 70.6190641C37.9836573 70.6190641 38.4313725 70.1713489 38.4313725 69.6190641L38.4313725 60.4190641C38.4313725 59.8667794 37.9836573 59.4190641 37.4313725 59.4190641L28.2313725 59.4190641C27.6790878 59.4190641 27.2313725 59.8667794 27.2313725 60.4190641L27.2313725 69.6190641C27.2313725 70.1713489 27.6790878 70.6190641 28.2313725 70.6190641z"/>
+          <polygon fill="#DAF0F1" points="9.224 89.274 18.447 89.274 18.447 79.954 9.224 79.954"/>
+          <path fill="#99BEC0" d="M48.0313725,13.4190641 L48.0313725,15.8190641 C48.0313725,16.9236336 47.135942,17.8190641 46.0313725,17.8190641 L2.03137255,17.8190641 C0.926803049,17.8190641 0.031372549,16.9236336 0.031372549,15.8190641 L0.031372549,13.4190641 C0.031372549,12.3144946 0.926803049,11.4190641 2.03137255,11.4190641 L46.0313725,11.4190641 C47.135942,11.4190641 48.0313725,12.3144946 48.0313725,13.4190641 Z"/>
+          <path fill="#BADBDD" d="M12.6028011,0.219064125 L35.459944,0.219064125 C37.9845154,0.219064125 40.0313725,2.22498412 40.0313725,4.69906412 L40.0313725,11.4190641 L8.03137255,11.4190641 L8.03137255,4.69906412 C8.03137255,2.22498412 10.0782297,0.219064125 12.6028011,0.219064125"/>
+        </g>
+      </g>
+    </g>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="115 228.5 109.122 231.09 109.769 224.7 105.489 219.91 111.767 218.55 115 213 118.233 218.55 124.511 219.91 120.231 224.7 120.878 231.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="145 228.5 139.122 231.09 139.769 224.7 135.489 219.91 141.767 218.55 145 213 148.233 218.55 154.511 219.91 150.231 224.7 150.878 231.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="175 228.5 169.122 231.09 169.769 224.7 165.489 219.91 171.767 218.55 175 213 178.233 218.55 184.511 219.91 180.231 224.7 180.878 231.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="205 228.5 199.122 231.09 199.769 224.7 195.489 219.91 201.767 218.55 205 213 208.233 218.55 214.511 219.91 210.231 224.7 210.878 231.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="235 228.5 229.122 231.09 229.769 224.7 225.489 219.91 231.767 218.55 235 213 238.233 218.55 244.511 219.91 240.231 224.7 240.878 231.09"/>
+  </g>
+</svg>
