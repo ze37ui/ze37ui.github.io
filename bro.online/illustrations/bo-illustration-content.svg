@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="500" viewBox="0 0 350 500">
   <defs>
-    <path id="bo-illustration-content-b" d="M123,38 L227,38 L227,48 C227,53.5228475 222.522847,58 217,58 L133,58 C127.477153,58 123,53.5228475 123,48 L123,38 Z"/>
-    <filter id="bo-illustration-content-a" width="305.8%" height="1170%" x="-102.9%" y="-375%" filterUnits="objectBoundingBox">
+    <path id="bo-illustration-content-c" d="M123,38 L227,38 L227,48 C227,53.5228475 222.522847,58 217,58 L133,58 C127.477153,58 123,53.5228475 123,48 L123,38 Z"/>
+    <filter id="bo-illustration-content-b" width="305.8%" height="1170%" x="-102.9%" y="-375%" filterUnits="objectBoundingBox">
       <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
       <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
@@ -19,37 +19,19 @@
         <feMergeNode in="shadowMatrixOuter3"/>
       </feMerge>
     </filter>
-    <path id="bo-illustration-content-d" d="M113,38 L113,53 C113,61.2842712 119.715729,68 128,68 L222,68 C230.284271,68 237,61.2842712 237,53 L237,38 L297,38 C302.522847,38 307,42.4771525 307,48 L307,442 C307,447.522847 302.522847,452 297,452 L53,452 C47.4771525,452 43,447.522847 43,442 L43,48 C43,42.4771525 47.4771525,38 53,38 L113,38 Z"/>
-    <filter id="bo-illustration-content-c" width="181.1%" height="151.7%" x="-40.5%" y="-18.1%" filterUnits="objectBoundingBox">
-      <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
-      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
-      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
-      <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter2"/>
-      <feOffset dy="5" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
-      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="17.5"/>
-      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.02 0"/>
-      <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="shadowSpreadOuter3"/>
-      <feOffset dy="16" in="shadowSpreadOuter3" result="shadowOffsetOuter3"/>
-      <feGaussianBlur in="shadowOffsetOuter3" result="shadowBlurOuter3" stdDeviation="12.5"/>
-      <feColorMatrix in="shadowBlurOuter3" result="shadowMatrixOuter3" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0"/>
-      <feMerge>
-        <feMergeNode in="shadowMatrixOuter1"/>
-        <feMergeNode in="shadowMatrixOuter2"/>
-        <feMergeNode in="shadowMatrixOuter3"/>
-      </feMerge>
-    </filter>
+    <path id="bo-illustration-content-a" d="M113,38 L113,53 C113,61.2842712 119.715729,68 128,68 L222,68 C230.284271,68 237,61.2842712 237,53 L237,38 L297,38 C302.522847,38 307,42.4771525 307,48 L307,442 C307,447.522847 302.522847,452 297,452 L53,452 C47.4771525,452 43,447.522847 43,442 L43,48 C43,42.4771525 47.4771525,38 53,38 L113,38 Z"/>
+    <mask id="bo-illustration-content-d" width="264" height="414" x="0" y="0" fill="#fff">
+      <use xlink:href="#bo-illustration-content-a"/>
+    </mask>
     <ellipse id="bo-illustration-content-e" cx="40" cy="40.002" rx="40" ry="40.002"/>
   </defs>
   <g fill="none" fill-rule="evenodd">
     <rect width="350" height="500"/>
     <g fill-rule="nonzero">
-      <use fill="#000" filter="url(#bo-illustration-content-a)" xlink:href="#bo-illustration-content-b"/>
-      <use fill="#BADBDD" xlink:href="#bo-illustration-content-b"/>
+      <use fill="#000" filter="url(#bo-illustration-content-b)" xlink:href="#bo-illustration-content-c"/>
+      <use fill="#BADBDD" xlink:href="#bo-illustration-content-c"/>
     </g>
-    <g fill-rule="nonzero">
-      <use fill="#000" filter="url(#bo-illustration-content-c)" xlink:href="#bo-illustration-content-d"/>
-      <use fill="#FFF" xlink:href="#bo-illustration-content-d"/>
-    </g>
+    <use fill="#FFF" fill-rule="nonzero" stroke="#BADBDD" stroke-dasharray="8" stroke-width="4" mask="url(#bo-illustration-content-d)" xlink:href="#bo-illustration-content-a"/>
     <rect width="130" height="16" x="73" y="261" fill="#BADBDD" fill-rule="nonzero" rx="8"/>
     <rect width="204" height="10" x="73" y="297" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
     <rect width="164" height="10" x="73" y="323" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
