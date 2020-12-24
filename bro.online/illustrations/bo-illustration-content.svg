@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="500" viewBox="0 0 350 500">
   <defs>
-    <path id="bo-illustration-content-a" d="M113,38 L113,53 C113,61.2842712 119.715729,68 128,68 L222,68 C230.284271,68 237,61.2842712 237,53 L237,38 L297,38 C302.522847,38 307,42.4771525 307,48 L307,442 C307,447.522847 302.522847,452 297,452 L53,452 C47.4771525,452 43,447.522847 43,442 L43,48 C43,42.4771525 47.4771525,38 53,38 L113,38 Z"/>
-    <mask id="bo-illustration-content-b" width="264" height="414" x="0" y="0" fill="#fff">
+    <path id="bo-illustration-content-a" d="M35,25 L114,25 L114,38 C114,46.2842712 120.715729,53 129,53 L221,53 C229.284271,53 236,46.2842712 236,38 L236,25 L315,25 C320.522847,25 325,29.4771525 325,35 L325,465 C325,470.522847 320.522847,475 315,475 L35,475 C29.4771525,475 25,470.522847 25,465 L25,35 C25,29.4771525 29.4771525,25 35,25 Z"/>
+    <mask id="bo-illustration-content-b" width="300" height="450" x="0" y="0" fill="#fff">
       <use xlink:href="#bo-illustration-content-a"/>
     </mask>
     <ellipse id="bo-illustration-content-c" cx="40" cy="40.002" rx="40" ry="40.002"/>
-    <path id="bo-illustration-content-f" d="M123,38 L227,38 L227,48 C227,53.5228475 222.522847,58 217,58 L133,58 C127.477153,58 123,53.5228475 123,48 L123,38 Z"/>
+    <path id="bo-illustration-content-f" d="M123,25 L227,25 L227,35 C227,40.5228475 222.522847,45 217,45 L133,45 C127.477153,45 123,40.5228475 123,35 L123,25 Z"/>
     <filter id="bo-illustration-content-e" width="305.8%" height="1170%" x="-102.9%" y="-375%" filterUnits="objectBoundingBox">
       <feOffset dy="11" in="SourceAlpha" result="shadowOffsetOuter1"/>
       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
@@ -27,14 +27,15 @@
   </defs>
   <g fill="none" fill-rule="evenodd">
     <rect width="350" height="500"/>
-    <use fill="#FFF" fill-rule="nonzero" stroke="#BADBDD" stroke-dasharray="8" stroke-width="4" mask="url(#bo-illustration-content-b)" xlink:href="#bo-illustration-content-a"/>
-    <rect width="130" height="16" x="73" y="261" fill="#BADBDD" fill-rule="nonzero" rx="8"/>
-    <rect width="204" height="10" x="73" y="297" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
-    <rect width="164" height="10" x="73" y="323" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
-    <rect width="184" height="10" x="73" y="349" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
-    <rect width="77" height="10" x="73" y="402" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
-    <rect width="97" height="10" x="180" y="402" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
-    <g transform="translate(135 108)">
+    <path fill="#FFF" fill-rule="nonzero" d="M35,25 L315,25 C320.522847,25 325,29.4771525 325,35 L325,465 C325,470.522847 320.522847,475 315,475 L35,475 C29.4771525,475 25,470.522847 25,465 L25,35 C25,29.4771525 29.4771525,25 35,25 Z"/>
+    <use fill-rule="nonzero" stroke="#BADBDD" stroke-dasharray="8" stroke-width="4" mask="url(#bo-illustration-content-b)" xlink:href="#bo-illustration-content-a"/>
+    <rect width="130" height="16" x="55" y="258" fill="#BADBDD" fill-rule="nonzero" rx="8"/>
+    <rect width="240" height="10" x="55" y="294" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="164" height="10" x="55" y="320" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="220" height="10" x="55" y="346" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="77" height="10" x="55" y="415" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <rect width="97" height="10" x="198" y="415" fill="#BADBDD" fill-rule="nonzero" rx="5"/>
+    <g transform="translate(135 105)">
       <mask id="bo-illustration-content-d" fill="#fff">
         <use xlink:href="#bo-illustration-content-c"/>
       </mask>
@@ -49,11 +50,11 @@
         </g>
       </g>
     </g>
-    <polygon fill="#FFBF00" fill-rule="nonzero" points="115 226.5 109.122 229.09 109.769 222.7 105.489 217.91 111.767 216.55 115 211 118.233 216.55 124.511 217.91 120.231 222.7 120.878 229.09"/>
-    <polygon fill="#FFBF00" fill-rule="nonzero" points="145 226.5 139.122 229.09 139.769 222.7 135.489 217.91 141.767 216.55 145 211 148.233 216.55 154.511 217.91 150.231 222.7 150.878 229.09"/>
-    <polygon fill="#FFBF00" fill-rule="nonzero" points="175 226.5 169.122 229.09 169.769 222.7 165.489 217.91 171.767 216.55 175 211 178.233 216.55 184.511 217.91 180.231 222.7 180.878 229.09"/>
-    <polygon fill="#FFBF00" fill-rule="nonzero" points="205 226.5 199.122 229.09 199.769 222.7 195.489 217.91 201.767 216.55 205 211 208.233 216.55 214.511 217.91 210.231 222.7 210.878 229.09"/>
-    <polygon fill="#FFBF00" fill-rule="nonzero" points="235 226.5 229.122 229.09 229.769 222.7 225.489 217.91 231.767 216.55 235 211 238.233 216.55 244.511 217.91 240.231 222.7 240.878 229.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="115 223.5 109.122 226.09 109.769 219.7 105.489 214.91 111.767 213.55 115 208 118.233 213.55 124.511 214.91 120.231 219.7 120.878 226.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="145 223.5 139.122 226.09 139.769 219.7 135.489 214.91 141.767 213.55 145 208 148.233 213.55 154.511 214.91 150.231 219.7 150.878 226.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="175 223.5 169.122 226.09 169.769 219.7 165.489 214.91 171.767 213.55 175 208 178.233 213.55 184.511 214.91 180.231 219.7 180.878 226.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="205 223.5 199.122 226.09 199.769 219.7 195.489 214.91 201.767 213.55 205 208 208.233 213.55 214.511 214.91 210.231 219.7 210.878 226.09"/>
+    <polygon fill="#FFBF00" fill-rule="nonzero" points="235 223.5 229.122 226.09 229.769 219.7 225.489 214.91 231.767 213.55 235 208 238.233 213.55 244.511 214.91 240.231 219.7 240.878 226.09"/>
     <g fill-rule="nonzero">
       <use fill="#000" filter="url(#bo-illustration-content-e)" xlink:href="#bo-illustration-content-f"/>
       <use fill="#BADBDD" xlink:href="#bo-illustration-content-f"/>
