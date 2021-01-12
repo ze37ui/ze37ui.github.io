@@ -123,10 +123,10 @@
             <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
             <use fill="#BADBDD" xlink:href="#path-9"></use>
         </g>
-        <rect id="Rectangle-96" fill="#BADBDD" fill-rule="nonzero" x="95" y="247" width="3" height="33" rx="1.5"></rect>
-        <path d="M102.8309,254.451209 C95.9629811,249.409327 89,252.721229 89,257.781429 C89,264.563563 103,260.808832 103,270 C103,276.308474 93.0787247,276.760843 88.0995962,272.217393" id="Path-32" stroke="#BADBDD" stroke-width="3" stroke-linecap="round" fill-rule="nonzero"></path>
-        <path d="M137,76.4512094 C130.94555,68.9103895 124.1691,73.7212285 124.1691,78.7814291 C124.1691,85.5635628 136.1691,83.8088317 136.1691,93 C136.1691,99.3084741 127.082584,101.739547 123.268696,95.217393" id="Path-32" stroke="#99BEC0" stroke-width="3" stroke-linecap="round" fill-rule="nonzero" transform="translate(130.134348, 85.807440) scale(-1, 1) translate(-130.134348, -85.807440) "></path>
-        <rect id="Rectangle-97" fill="#99BEC0" fill-rule="nonzero" x="119" y="82" width="22" height="3" rx="1.5"></rect>
-        <rect id="Rectangle-97" fill="#99BEC0" fill-rule="nonzero" x="119" y="87" width="22" height="3" rx="1.5"></rect>
+        <rect id="Rectangle-96" fill="#BADBDD" fill-rule="nonzero" x="95" y="247" width="2" height="33" rx="1"></rect>
+        <path d="M102.8309,254.451209 C95.9629811,249.409327 89,252.721229 89,257.781429 C89,264.563563 103,260.808832 103,270 C103,276.308474 93.0787247,276.760843 88.0995962,272.217393" id="Path-32" stroke="#BADBDD" stroke-width="2" stroke-linecap="round" fill-rule="nonzero"></path>
+        <path d="M137,76.4512094 C130.94555,68.9103895 124.1691,73.7212285 124.1691,78.7814291 C124.1691,85.5635628 136.1691,83.8088317 136.1691,93 C136.1691,99.3084741 127.082584,101.739547 123.268696,95.217393" id="Path-32" stroke="#99BEC0" stroke-width="2" stroke-linecap="round" fill-rule="nonzero" transform="translate(130.134348, 85.807440) scale(-1, 1) translate(-130.134348, -85.807440) "></path>
+        <rect id="Rectangle-97" fill="#99BEC0" fill-rule="nonzero" x="119" y="82" width="22" height="2" rx="1"></rect>
+        <rect id="Rectangle-97" fill="#99BEC0" fill-rule="nonzero" x="119" y="87" width="22" height="2" rx="1"></rect>
     </g>
 </svg>
