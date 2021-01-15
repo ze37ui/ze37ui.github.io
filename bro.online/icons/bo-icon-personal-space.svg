@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bo-icon-personal-space</title>
+    <g id="bo-icon-personal-space" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="50" height="50"></rect>
+        <rect id="Rectangle-2" fill="#365A77" fill-rule="nonzero" x="7" y="39" width="30" height="5" rx="2"></rect>
+        <rect id="Rectangle-2" fill="#365A77" fill-rule="nonzero" x="17" y="36" width="10" height="8"></rect>
+        <rect id="Rectangle-2" fill="#365A77" fill-rule="nonzero" x="1" y="1" width="43" height="35" rx="5"></rect>
+        <circle id="Oval-32" fill="#FFFFFF" fill-rule="nonzero" cx="6.5" cy="6.5" r="2.5"></circle>
+        <circle id="Oval-32" fill="#FFFFFF" fill-rule="nonzero" cx="13.5" cy="6.5" r="2.5"></circle>
+        <circle id="Oval-32" fill="#FFFFFF" fill-rule="nonzero" cx="20.5" cy="6.5" r="2.5"></circle>
+        <path d="M31,38 L49,38 L49,47 C49,48.1045695 48.1045695,49 47,49 L33,49 C31.8954305,49 31,48.1045695 31,47 L31,38 L31,38 Z" id="Rectangle" fill="#94ACBE"></path>
+        <path d="M31,33 L49,33 L49,35 C49,36.1045695 48.1045695,37 47,37 L33,37 C31.8954305,37 31,36.1045695 31,35 L31,33 L31,33 Z" id="Rectangle" fill="#94ACBE" transform="translate(40.000000, 35.000000) scale(1, -1) translate(-40.000000, -35.000000) "></path>
+        <rect id="Rectangle" fill="#94ACBE" x="34" y="31" width="2" height="4"></rect>
+        <rect id="Rectangle" fill="#94ACBE" x="44" y="31" width="2" height="4"></rect>
+    </g>
+</svg>
