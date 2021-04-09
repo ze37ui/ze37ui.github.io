@@ -64,7 +64,7 @@
 
     generator.document.write('<html><head><title>Popup</title>');
     generator.document.write('</head><body>');
-    generator.document.write(documet.getElementById('counter-guests'));
+    generator.document.write('<script>window.opener.document.body.innerHTML = documet.getElementById('counter-guests')</script>');
     generator.document.write('</body></html>');
     generator.document.close();
   }
