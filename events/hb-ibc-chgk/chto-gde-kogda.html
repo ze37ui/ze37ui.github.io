@@ -65,8 +65,9 @@
     var generator=window.open('','name','height=300,width=400,status=1');
 
     generator.document.write('<html><head><title>Popup</title>');
-    generator.document.write('</head><body><h1>2');
-    generator.document.write('<script>window.opener.document.body.innerHTML = counterGuests');
+    generator.document.write('</head><body><h1 id="uno">2');
+    generator.document.write('<script>document.getElementById('uno').innerHTML += counterGuests');
+    // generator.document.write('<script>window.opener.document.body.innerHTML = counterGuests');
     generator.document.close();
   }
 
