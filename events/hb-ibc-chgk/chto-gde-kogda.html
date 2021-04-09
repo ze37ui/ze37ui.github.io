@@ -79,7 +79,8 @@
 </script>
 <script>
 
-  var counterGuests = 1;
+  var counterGuests = 5;
+  var counterHost = 1;
 
   function dirtypop() {
     var generator=window.open('','name','height=300,width=400,status=1');
@@ -90,6 +91,7 @@
     // generator.document.write('<script>window.opener.document.body.innerHTML = counterGuests');
     // generator.document.write('<script>document.write(counterGuests)');
     generator.document.write(counterGuests);
+    generator.document.write(counterHost);
     generator.document.close();
   }
 
