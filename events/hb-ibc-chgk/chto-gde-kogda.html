@@ -7,6 +7,23 @@
 
     <style media="screen">
 
+      body {
+        display: flex;
+      }
+
+      .chgk-block-40-percent {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        border: 1px solid black;
+      }
+
+      .chgk-block-60-percent {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+      }
+
 
       .chgk-counter{
         display: flex;
@@ -37,17 +54,20 @@
     </style>
 
     <body>
-      <div class="chgk-counter" id="counter">
-        <div class="chgk-counter-left-side" id="counter-guests">
-          5
+      <div class="chgk-block-40-percent">
+        <div class="chgk-counter" id="counter">
+          <div class="chgk-counter-left-side" id="counter-guests">
+            5
+          </div>
+          <div class="chgk-counter-right-side" id="counter-hosts">
+            1
+          </div>
         </div>
-        <div class="chgk-counter-right-side" id="counter-hosts">
-          1
-        </div>
+        <a href="javascript:poptastic('chto-gde-kogda-new-window.html');">Pop it</a>
+        <a href="page.html" target="popsome">Link</a>
+        <a href="javascript:dirtypop();">Generate!</a>
       </div>
-      <a href="javascript:poptastic('chto-gde-kogda-new-window.html');">Pop it</a>
-      <a href="page.html" target="popsome">Link</a>
-      <a href="javascript:dirtypop();">Generate!</a>
+
     </body>
     <script>
     var newwindow;
