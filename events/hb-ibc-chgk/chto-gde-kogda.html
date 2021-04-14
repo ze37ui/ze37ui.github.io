@@ -93,7 +93,7 @@
   function dirtypop() {
     var generator=window.open('','name','height=300,width=400,status=1');
 
-    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;width:50%;font-family:sans-serif;font-size:200px;text-align:center;color:red;}div::first-сhild{background-color:red;color:white;}span{font-size:80px;}</style>');
+    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:red;}div:first-сhild{background-color:red;color:white;}span{font-size:50px;font-weight:normal;}</style>');
     generator.document.write('</head><body><div>');
     generator.document.write(counterGuests);
     generator.document.write('<span>ЗНАТОКИ</span></div><div>');
@@ -118,13 +118,13 @@
   }
   
   function addHost() {
-    counterGuests++;
+    counterHost++;
     document.getElementById('counter-host').innerHTML = counterHost;
     dirtypop();
   }
   
   function removeHost() {
-    counterGuests--;
+    counterHost--;
     document.getElementById('counter-host').innerHTML = counterHost;
     dirtypop();
   }
