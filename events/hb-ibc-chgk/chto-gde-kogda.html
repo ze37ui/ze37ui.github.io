@@ -11,17 +11,17 @@
         display: flex;
       }
 
-      .chgk-block-40-percent {
+      .chgk-block-33-percent {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 33%;
         border: 1px solid black;
       }
 
-      .chgk-block-60-percent {
+      .chgk-block-50-percent {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 50%;
       }
 
 
@@ -54,16 +54,16 @@
     </style>
 
     <body>
-      <div class="chgk-block-40-percent">
+      <div class="chgk-block-33-percent">
         <div class="chgk-counter" id="counter">
-          <div>
+          <div class="chgk-block-50-percent">
             <a href="javascript:addGuests();">+</a>
             <div class="chgk-counter-left-side" id="counter-guests">
               0
             </div>
             <a href="javascript:removeGuests();">-</a>
           </div>
-          <div>
+          <div class="chgk-block-50-percent">
             <a href="javascript:addHost();">+</a>
             <div class="chgk-counter-right-side" id="counter-host">
               0
@@ -93,7 +93,7 @@
   function dirtypop() {
     var generator=window.open('','name','height=300,width=400,status=1');
 
-    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:red;}section{background-color:red;color:white;}span{font-size:50px;font-weight:normal;}</style>');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:red;background-color:white;}section{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:white;background-color:red;}span{font-size:50px;font-weight:normal;}</style>');
     generator.document.write('</head><body><div><section>');
     generator.document.write(counterGuests);
     generator.document.write('<span>ЗНАТОКИ</span></section></div><div>');
