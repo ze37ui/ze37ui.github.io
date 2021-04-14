@@ -61,14 +61,14 @@
             <div class="chgk-counter-left-side" id="counter-guests">
               5
             </div>
-            <button>-</button>
+            <a href="javascript:removeGuests();">-</a>
           </div>
           <div>
-            <button>+</button>
-            <div class="chgk-counter-right-side" id="counter-hosts">
+            <a href="javascript:addHost();">+</a>
+            <div class="chgk-counter-right-side" id="counter-host">
               1
             </div>
-            <button>-</button>
+            <a href="javascript:removeHost();">-</a>
           </div>
         </div>
         <a href="javascript:poptastic('chto-gde-kogda-new-window.html');">Pop it</a>
@@ -87,13 +87,13 @@
 </script>
 <script>
 
-  var counterGuests = 5;
-  var counterHost = 1;
+  var counterGuests = 0;
+  var counterHost = 0;
 
   function dirtypop() {
     var generator=window.open('','name','height=300,width=400,status=1');
 
-    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{display:flex;width:50%;font-family:sans-serif;font-size:200px;text-align:center;color:red;}div:first-сhild{background-color:red;color:white;}span{font-size:80px;}</style>');
+    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;width:50%;font-family:sans-serif;font-size:200px;text-align:center;color:red;}div::first-сhild{background-color:red;color:white;}span{font-size:80px;}</style>');
     generator.document.write('</head><body><div>');
     generator.document.write(counterGuests);
     generator.document.write('<span>ЗНАТОКИ</span></div><div>');
@@ -108,6 +108,24 @@
   function addGuests() {
     counterGuests++;
     document.getElementById('counter-guests').innerHTML = counterGuests;
+    dirtypop();
+  }
+  
+  function removeGuests() {
+    counterGuests--;
+    document.getElementById('counter-guests').innerHTML = counterGuests;
+    dirtypop();
+  }
+  
+  function addHost() {
+    counterGuests++;
+    document.getElementById('counter-host').innerHTML = counterHost;
+    dirtypop();
+  }
+  
+  function removeHost() {
+    counterGuests--;
+    document.getElementById('counter-host').innerHTML = counterHost;
     dirtypop();
   }
 
