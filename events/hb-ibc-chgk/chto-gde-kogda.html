@@ -94,9 +94,9 @@
     var generator=window.open('','name','height=300,width=400,status=1');
 
     generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:#e94d3e;background-color:#fff;}section{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:#fff;background-color:#e94d3e;}span{font-size:50px;font-weight:normal;}</style>');
-    generator.document.write('</head><body><div><section>');
+    generator.document.write('</head><body><section>');
     generator.document.write(counterGuests);
-    generator.document.write('<span>ЗНАТОКИ</span></section></div><div>');
+    generator.document.write('<span>ЗНАТОКИ</span></section><div>');
     // generator.document.write('<script>document.getElementById('uno').innerHTML += counterGuests');
     // generator.document.write('<script>window.opener.document.body.innerHTML = counterGuests');
     // generator.document.write('<script>document.write(counterGuests)');
