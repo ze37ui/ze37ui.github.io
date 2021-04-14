@@ -7,15 +7,34 @@
 
     <style media="screen">
 
-      body {
-        display: flex;
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+        outline: none;
       }
 
-      .chgk-block-33-percent {
+      body {
         display: flex;
         flex-direction: column;
-        width: 33%;
-        border: 1px solid black;
+        width: 600px;
+        margin: 50px auto;
+      }
+
+      h1 {
+        font-family: sans-serif;
+        color: #333;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+        margin-bottom: 30px;
+      }
+
+      .chgk-block-100-percent {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
       }
 
       .chgk-block-50-percent {
@@ -25,70 +44,137 @@
       }
 
 
-      .chgk-counter{
+      .chgk-share-block {
         display: flex;
-        border: 1px solid black;
+        border: 2px solid #ddd;
+        margin-bottom: 30px;
+      }
+
+      .chgk-counter {
+        display: flex;
+        border: 2px solid #ddd;
       }
 
       .chgk-counter-left-side {
-        width: 50%;
-        height: 120px;
         background-color: #e94d3e;
-        font-family: Arial Bold, sans-serif;
-        font-size: 100px;
         color: #fff;
-        text-align: center;
-
+        padding: 10px;
+        margin: 5px;
       }
 
       .chgk-counter-right-side {
-        width: 50%;
-        height: 120px;
         background-color: #fff;
-        font-family: Arial Bold, sans-serif;
-        font-size: 100px;
         color: #e94d3e;
+        padding: 10px;
+        margin: 5px 5px 5px 0;
+      }
+
+      .chgk-counter-number {
+        font-family: sans-serif;
+        font-size: 100px;
+        font-weight: bold;
         text-align: center;
       }
-      
+
+      .chgk-counter-team-name {
+        font-family: Arial Bold, sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .chgk-counter-buttons {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .chgk-counter-left-side .chgk-counter-buttons {
+        background-color: #e94d3e;
+      }
+
+      .chgk-button-primary {
+        border: none;
+        background-color: #fff;
+        color: #e94d3e;
+      }
+
+      .chgk-button-secondary {
+        border: none;
+        background-color: #e94d3e;
+        color: #fff;
+      }
+
+      .chgk-button-tertiary {
+        width: inherit;
+        margin-right: 5px;
+        border-color: #fff;
+        color: #fff;
+      }
+
+      .chgk-counter-right-side .chgk-button-tertiary {
+        border-color: #e94d3e;
+        color: #e94d3e;
+      }
+
       a {
         display: inline-block;
         width: 100%;
+        font-size: 15px;
         line-height: 20px;
-        padding: 5px 10px;
+        padding: 10px 15px;
         border: 1px solid #ddd;
         color: #666;
         text-decoration: none;
         cursor: pointer;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: normal;
       }
-      
+
       a:hover {
         background-color: #f5f5f5;
+      }
+
+      .chgk-share-block-button {
+        width: 100px;
+        vertical-align: middle;
+        border: none;
+        border-left: 2px solid #ddd;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+
       }
 
     </style>
 
     <body>
-      <div class="chgk-block-33-percent">
-        <div class="chgk-counter" id="counter">
-          <div class="chgk-block-50-percent">
-            <a href="javascript:addGuests();">+</a>
-            <div class="chgk-counter-left-side" id="counter-guests">
-              0
-            </div>
-            <a href="javascript:removeGuests();">-</a>
-          </div>
-          <div class="chgk-block-50-percent">
-            <a href="javascript:addHost();">+</a>
-            <div class="chgk-counter-right-side" id="counter-host">
-              0
-            </div>
-            <a href="javascript:removeHost();">-</a>
+      <h1>Управление вторым монитором</h1>
+      <div class="chgk-block-100-percent chgk-share-block chgk-counter">
+        <div class="chgk-block-50-percent chgk-counter-left-side">
+          <span class="chgk-counter-number" id="counter-guests">0</span>
+          <span class="chgk-counter-team-name">ЗНАТОКИ</span>
+          <div class="chgk-counter-buttons">
+            <a class="chgk-button-tertiary" href="javascript:removeGuests();">-1</a>
+            <a class="chgk-button-primary" href="javascript:addGuests();">+1 Знатокам</a>
           </div>
         </div>
-        <a href="javascript:poptastic('chto-gde-kogda-new-window.html');">Pop it</a>
-        <a href="page.html" target="popsome">Link</a>
-        <a href="javascript:dirtypop();">Generate!</a>
+        <div class="chgk-block-50-percent chgk-counter-right-side">
+          <span class="chgk-counter-number" id="counter-host">0</span>
+          <span class="chgk-counter-team-name">БАРМЕН</span>
+          <div class="chgk-counter-buttons">
+            <a class="chgk-button-tertiary" href="javascript:removeHost();">-1</a>
+            <a class="chgk-button-secondary" href="javascript:addHost();">+1 Бармену</a>
+          </div>
+        </div>
+        <a class="chgk-share-block-button" href="javascript:dirtypop();">Вывести на экран</a>
+      </div>
+      <div class="chgk-block-100-percent chgk-share-block">
+        <div class="chgk-block-100-percent">
+          <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-display-illustration.svg" alt="">
+        </div>
+        <a class="chgk-share-block-button" href="javascript:poptastic('chto-gde-kogda-new-window.html');">Вывести на экран</a>
       </div>
 
     </body>
@@ -104,31 +190,31 @@
 
   var counterGuests = 0;
   var counterHost = 0;
-  
+
   function addGuests() {
     counterGuests++;
     document.getElementById('counter-guests').innerHTML = counterGuests;
     dirtypop();
   }
-  
+
   function removeGuests() {
     counterGuests--;
     document.getElementById('counter-guests').innerHTML = counterGuests;
     dirtypop();
   }
-  
+
   function addHost() {
     counterHost++;
     document.getElementById('counter-host').innerHTML = counterHost;
     dirtypop();
   }
-  
+
   function removeHost() {
     counterHost--;
     document.getElementById('counter-host').innerHTML = counterHost;
     dirtypop();
   }
-  
+
   function dirtypop() {
     var generator=window.open('','name','height=400,width=300,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
     generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:30vw;font-weight:bold;line-height:1;text-align:center;color:#e94d3e;background-color:#fff;}section{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:30vw;font-weight:bold;line-height:1;text-align:center;color:#fff;background-color:#e94d3e;}span{font-size:2.5vw;font-weight:normal;}</style>');
@@ -139,6 +225,6 @@
     generator.document.write('<span>БАРМЕН</span>');
     generator.document.close();
   }
-  
+
     </script>
   </html>
