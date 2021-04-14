@@ -59,14 +59,14 @@
           <div>
             <a href="javascript:addGuests();">+</a>
             <div class="chgk-counter-left-side" id="counter-guests">
-              5
+              0
             </div>
             <a href="javascript:removeGuests();">-</a>
           </div>
           <div>
             <a href="javascript:addHost();">+</a>
             <div class="chgk-counter-right-side" id="counter-host">
-              1
+              0
             </div>
             <a href="javascript:removeHost();">-</a>
           </div>
@@ -93,10 +93,10 @@
   function dirtypop() {
     var generator=window.open('','name','height=300,width=400,status=1');
 
-    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:red;}div:first-сhild{background-color:red;color:white;}span{font-size:50px;font-weight:normal;}</style>');
-    generator.document.write('</head><body><div>');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:800px;font-weight:bold;line-height:1;text-align:center;color:red;}section{background-color:red;color:white;}span{font-size:50px;font-weight:normal;}</style>');
+    generator.document.write('</head><body><div><section>');
     generator.document.write(counterGuests);
-    generator.document.write('<span>ЗНАТОКИ</span></div><div>');
+    generator.document.write('<span>ЗНАТОКИ</span></section></div><div>');
     // generator.document.write('<script>document.getElementById('uno').innerHTML += counterGuests');
     // generator.document.write('<script>window.opener.document.body.innerHTML = counterGuests');
     // generator.document.write('<script>document.write(counterGuests)');
