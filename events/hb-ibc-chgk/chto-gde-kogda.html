@@ -86,13 +86,14 @@
     var generator=window.open('','name','height=300,width=400,status=1');
 
     generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{width:50%;font-family:sans-serif;font-size:200px;text-align:center;color:red;}div:first-shild{background-color:red;color:white;}</style>');
-    generator.document.write('</head><body><div>');
+    generator.document.write('</head><body><div><button>+</button>');
     generator.document.write(counterGuests);
-    generator.document.write('</div><div>');
+    generator.document.write('<button>-</button></div><div><button>+</button>');
     // generator.document.write('<script>document.getElementById('uno').innerHTML += counterGuests');
     // generator.document.write('<script>window.opener.document.body.innerHTML = counterGuests');
     // generator.document.write('<script>document.write(counterGuests)');
     generator.document.write(counterHost);
+    generator.document.write('<button>-</button></div>');
     generator.document.close();
   }
 
