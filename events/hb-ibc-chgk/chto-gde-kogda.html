@@ -57,7 +57,7 @@
       <div class="chgk-block-40-percent">
         <div class="chgk-counter" id="counter">
           <div>
-            <button>+</button>
+            <a href="javascript:addGuests();">+</a>
             <div class="chgk-counter-left-side" id="counter-guests">
               5
             </div>
@@ -93,7 +93,7 @@
   function dirtypop() {
     var generator=window.open('','name','height=300,width=400,status=1');
 
-    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{width:50%;font-family:sans-serif;font-size:200px;text-align:center;color:red;}div:first-shild{background-color:red;color:white;}</style>');
+    generator.document.write('<html><head><title>Popup</title><style>body{display:flex;flex-direction:row;}div{display:flex;width:50%;font-family:sans-serif;font-size:200px;text-align:center;color:red;}div:first-сhild{background-color:red;color:white;}span{font-size:80px;}</style>');
     generator.document.write('</head><body><div>');
     generator.document.write(counterGuests);
     generator.document.write('<span>ЗНАТОКИ</span></div><div>');
@@ -103,6 +103,12 @@
     generator.document.write(counterHost);
     generator.document.write('<span>БАРМЕН</span>');
     generator.document.close();
+  }
+  
+  function addGuests() {
+    counterGuests++;
+    document.getElementById('counter-guests').innerHTML = counterGuests;
+    dirtypop();
   }
 
       // function dirtypop()
