@@ -204,27 +204,20 @@
         <div class="chgk-block-100-percent">
           <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg" alt="">
         </div>
-        <a class="chgk-share-block-button" href="javascript:dirtypopPhoto(https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg);"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
       </div>
       <div class="chgk-block-50-percent chgk-share-block">
         <div class="chgk-block-100-percent">
-          <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolutiob-no-text.jpg" alt="">
+          <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution-no-text.jpg" alt="">
         </div>
-        <a class="chgk-share-block-button" href="javascript:dirtypopPhoto(https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolutiob-no-text.jpg);"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution-no-text.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
       </div>
       <div class="chgk-block-50-percent chgk-share-block">
         <div class="chgk-block-100-percent">
           <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pencils.jpg" alt="">
         </div>
-        <a class="chgk-share-block-button" href="javascript:dirtypopPhoto(https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pencils.jpg);"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pencils.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
       </div>
-      <div class="chgk-block-50-percent chgk-share-block">
-        <div class="chgk-block-100-percent">
-          <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-chelyabinsk.jpg" alt="">
-        </div>
-        <a class="chgk-share-block-button" href="javascript:dirtypopPhoto(https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-chelyabinsk.jpg);"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
-      </div>
-
     </body>
     <script>
     var newwindow;
@@ -274,7 +267,7 @@
   
   function dirtypopPhoto(photoLink) {
     var generator=window.open('','name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
-    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;background:url("photoLink");}</style>');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;background:url(photoLink);}</style>');
     generator.document.write('</head><body><div>');
     generator.document.close();
   }
