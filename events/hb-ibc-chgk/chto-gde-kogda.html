@@ -173,7 +173,7 @@
     </style>
 
     <body>
-      <h1>Управление вторым монитором</h1>
+      <h1>Счет</h1>
       <div class="chgk-block-100-percent chgk-share-block chgk-counter">
         <div class="chgk-block-50-percent chgk-counter-left-side">
           <span class="chgk-counter-number" id="counter-guests">0</span>
@@ -193,11 +193,18 @@
         </div>
         <a class="chgk-share-block-button" href="javascript:dirtypop();"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
       </div>
+      <h1>Картинки</h1>
       <div class="chgk-block-100-percent chgk-share-block">
         <div class="chgk-block-100-percent">
           <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-display-illustration.svg" alt="">
         </div>
         <a class="chgk-share-block-button" href="javascript:poptastic('chto-gde-kogda-new-window.html');"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+      </div>
+      <div class="chgk-block-50-percent chgk-share-block">
+        <div class="chgk-block-100-percent">
+          <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-display-illustration.svg" alt="">
+        </div>
+        <a class="chgk-share-block-button" href="javascript:dirtypopPhoto();"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
       </div>
 
     </body>
@@ -244,6 +251,13 @@
     generator.document.write('<span>ЗНАТОКИ</span></section><div>');
     generator.document.write(counterHost);
     generator.document.write('<span>БАРМЕН</span>');
+    generator.document.close();
+  }
+  
+  function dirtypopPhoto() {
+    var generator=window.open('','name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;background:url("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg");}</style>');
+    generator.document.write('</head><body><div>');
     generator.document.close();
   }
 
