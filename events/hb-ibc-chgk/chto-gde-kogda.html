@@ -267,7 +267,7 @@
   
   function dirtypopPhoto(photoLink) {
     var generator=window.open('','name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
-    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;background:url(photoLink);}</style>');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;background:url('photoLink');}</style>');
     generator.document.write('</head><body><div>');
     generator.document.close();
   }
