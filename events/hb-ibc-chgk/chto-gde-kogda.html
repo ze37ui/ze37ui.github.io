@@ -28,7 +28,8 @@
         font-size: 30px;
         font-weight: bold;
         line-height: 40px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
       }
 
       .chgk-block-100-percent {
@@ -48,6 +49,7 @@
         display: flex;
         border: 2px solid #ddd;
         margin-bottom: 30px;
+        flex-direction: row;
       }
 
       .chgk-counter {
@@ -74,6 +76,7 @@
         font-size: 100px;
         font-weight: bold;
         text-align: center;
+        margin-top: 30px;
       }
 
       .chgk-counter-team-name {
@@ -81,7 +84,7 @@
         font-size: 20px;
         font-weight: normal;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
 
       .chgk-counter-buttons {
@@ -169,9 +172,25 @@
       .chgk-share-block-button:hover {
         background-color: #e3e3e3;
       }
-      
+
       .chgk-flex-wrap {
         flex-wrap: wrap;
+      }
+
+      .chgk-photo-question {
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+      }
+
+      .chgk-flex-wrap .chgk-share-block:nth-child(odd) {
+        margin-right: 15px;
+        width: calc(50% - 15px);
+      }
+
+      .chgk-flex-wrap .chgk-share-block:nth-child(even) {
+        margin-left: 15px;
+        width: calc(50% - 15px);
       }
 
     </style>
@@ -202,35 +221,40 @@
         <div class="chgk-block-100-percent">
           <img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-display-illustration.svg" alt="">
         </div>
-        <a class="chgk-share-block-button" href="javascript:poptastic('chto-gde-kogda-new-window.html');"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        <a class="chgk-share-block-button" href="javascript:dirtypopLogo();"><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
       </div>
-      <h1>Картинки для вопросов</h1>
+      <h1>Блиц</h1>
       <div class="chgk-block-100-percent chgk-flex-wrap">
         <div class="chgk-block-50-percent chgk-share-block">
-          <div class="chgk-block-100-percent" style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg') no-repeat; background-size: contain;">
-          </div>
-          <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
-        </div>
-        <div class="chgk-block-50-percent chgk-share-block">
-          <div class="chgk-block-100-percent"  style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution-no-text.jpg') no-repeat; background-size: contain;">
+          <div class="chgk-block-100-percent chgk-photo-question"  style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution-no-text.jpg');">
           </div>
           <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution-no-text.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
         </div>
         <div class="chgk-block-50-percent chgk-share-block">
-          <div class="chgk-block-100-percent" style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pencilst.jpg') no-repeat; background-size: contain;">
+          <div class="chgk-block-100-percent chgk-photo-question" style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg');">
+          </div>
+          <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pandas.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        </div>
+        <div class="chgk-block-50-percent chgk-share-block">
+          <div class="chgk-block-100-percent chgk-photo-question" style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution.jpg');">
+          </div>
+          <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-revolution.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        </div>
+      </div>
+      <h1>Другие вопросы</h1>
+      <div class="chgk-block-100-percent chgk-flex-wrap">
+        <div class="chgk-block-50-percent chgk-share-block">
+          <div class="chgk-block-100-percent chgk-photo-question" style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pencils.jpg');">
           </div>
           <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-pencils.jpg");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
         </div>
+        <div class="chgk-block-50-percent chgk-share-block">
+          <div class="chgk-block-100-percent chgk-photo-question" style="background:url('https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-chelyabinsk.png');">
+          </div>
+          <a class="chgk-share-block-button" href='javascript:dirtypopPhoto("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-photo-chelyabinsk.png");'><img src="https://ze37ui.github.io/events/hb-ibc-chgk/chgk-icon-share.svg">Вывести на экран</a>
+        </div>
       </div>
-      <h1>Картинки для ответов</h1>
-      
     </body>
-    <script>
-    var newwindow;
-    function poptastic(url) {
-      newwindow=window.open(url,'name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
-    }
-</script>
 <script>
 
   var counterGuests = 0;
@@ -262,20 +286,28 @@
 
   function dirtypop() {
     var generator=window.open('','name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
-    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:30vw;font-weight:bold;line-height:1;text-align:center;color:#333;background-color:#fff;}section{display:flex;flex-direction:column;justify-content:center;width:50%;font-family:sans-serif;font-size:30vw;font-weight:bold;line-height:1;text-align:center;color:#fff;background-color:#e94d3e;}span{font-size:2.5vw;font-weight:normal;}</style>');
-    generator.document.write('</head><body><section data-a="safasdf">');
+    generator.document.write('<html><head><title>Popup</title><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet"><style>*{margin:0; padding:0; border:none; box-sizing:border-box; outline:none;} body{display:flex; flex-direction:row;} div{display:flex; flex-direction:column; justify-content:center; width:50%; font-family: "Roboto", sans-serif; font-size:30vw; font-weight:bold; line-height:1; text-align:center; color:#333; background-color:#fff;} section{display:flex; flex-direction:column; justify-content:center; width:50%; font-family: "Roboto", sans-serif; font-size:30vw; font-weight:bold; line-height:1; text-align:center; color:#fff; background-color:#e94d3e;} span{font-family: "PT Sans", sans-serif; font-size:2.5vw; font-weight:normal;}</style>');
+    generator.document.write('</head><body><section>');
     generator.document.write(counterGuests);
     generator.document.write('<span>ЗНАТОКИ</span></section><div>');
     generator.document.write(counterHost);
     generator.document.write('<span>БАРМЕН</span>');
     generator.document.close();
   }
-  
+
+  function dirtypopLogo() {
+    var generator=window.open('','name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0; padding:0; border:none; box-sizing:border-box; outline:none;} body{display:inline-block; background-image:url("https://ze37ui.github.io/events/hb-ibc-chgk/chgk-display-illustration.png"); background-repeat: no-repeat; width: 96vw; height: 96vh; background-size: contain; background-position: center; margin: auto; }');
+    generator.document.write('</head><body>');
+    generator.document.close();
+  }
+
   function dirtypopPhoto(photoLink) {
     var generator=window.open('','name','height=600,width=400,menubar=no,location=no,resizable=yes,scrollbars=no,status=no');
-    generator.document.write('<html><head><title>Popup</title><style>*{margin:0;padding:0;border:none;}body{display:flex;flex-direction:row;}div{display:flex;flex-direction:column;justify-content:center;width:50%;background:url(');
+    generator.document.write('<html><head><title>Popup</title><style>*{margin:0; padding:0; border:none; box-sizing:border-box; outline:none;} body{display:flex; align-items: center; justify-content: center; background: linear-gradient(to right, #e94d3e, #e94d3e 50%, #fff 50%, #fff);} img{width:50%; margin:auto; border: 1vw solid #fff; border-bottom-width: 4vw; box-shadow: 0 0 0 1px #1d1d1b; background: #fff;}</style>');
+    generator.document.write('</head><body><img src=');
     generator.document.write(photoLink);
-    generator.document.write(');}</style></head><body><div>');
+    generator.document.write(' >');
     generator.document.close();
   }
 
