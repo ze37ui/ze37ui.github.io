@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration-apartments-shining-plate</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Страница-с-поиском" transform="translate(-775.000000, -1466.000000)">
+            <g id="illustration-apartments-shining-plate" transform="translate(775.000000, 1466.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="80" height="80"></rect>
+                <circle id="Oval" stroke="#8AB4B4" stroke-width="2" fill="#EEFCFC" cx="40" cy="40" r="34"></circle>
+                <circle id="Mask" stroke="#8AB4B4" stroke-width="2" fill="#FFFFFF" cx="40" cy="40" r="22"></circle>
+                <polygon id="Star" fill="#F1BF8C" transform="translate(21.500000, 27.500000) rotate(45.000000) translate(-21.500000, -27.500000) " points="21.5 30.95 13.368272 35.631728 18.05 27.5 13.368272 19.368272 21.5 24.05 29.631728 19.368272 24.95 27.5 29.631728 35.631728"></polygon>
+                <rect id="Rectangle" fill="#C7DEDE" transform="translate(44.500000, 45.000000) rotate(-315.000000) translate(-44.500000, -45.000000) " x="44" y="36" width="1" height="18"></rect>
+                <rect id="Rectangle" fill="#C7DEDE" transform="translate(48.500000, 48.250000) rotate(-315.000000) translate(-48.500000, -48.250000) " x="48" y="43" width="1" height="10.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

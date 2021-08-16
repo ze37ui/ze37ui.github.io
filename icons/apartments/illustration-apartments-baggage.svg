@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration-apartments-baggage</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Страница-с-поиском" transform="translate(-775.000000, -1743.000000)">
+            <g id="illustration-apartments-baggage" transform="translate(775.000000, 1743.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="80" height="80"></rect>
+                <rect id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#EEFCFC" x="32" y="19" width="43" height="53" rx="5"></rect>
+                <rect id="Rectangle" fill="#8AB4B4" x="42" y="12" width="2" height="7"></rect>
+                <path d="M61,4 C62.6568542,4 64.1568542,4.67157288 65.2426407,5.75735931 C66.3284271,6.84314575 67,8.34314575 67,10 L67,10 L67,12 L63,12 L63,10 C63,9.44771525 62.7761424,8.94771525 62.4142136,8.58578644 C62.0522847,8.22385763 61.5522847,8 61,8 L61,8 L47,8 C46.4477153,8 45.9477153,8.22385763 45.5857864,8.58578644 C45.2238576,8.94771525 45,9.44771525 45,10 L45,10 L45,12 L41,12 L41,10 C41,8.34314575 41.6715729,6.84314575 42.7573593,5.75735931 C43.8431458,4.67157288 45.3431458,4 47,4 L47,4 L61,4 Z" id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#EEFCFC"></path>
+                <rect id="Rectangle" fill="#8AB4B4" x="64" y="12" width="2" height="7"></rect>
+                <rect id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#EEFCFC" x="3" y="39" width="43" height="33" rx="5"></rect>
+                <rect id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#EEFCFC" x="15" y="31" width="19" height="4" rx="2"></rect>
+                <rect id="Rectangle" fill="#8AB4B4" x="16" y="36" width="2" height="3"></rect>
+                <rect id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#FFFFFF" x="25" y="43" width="5" height="10" rx="2"></rect>
+                <rect id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#FFFFFF" x="43" y="43" width="5" height="10" rx="2"></rect>
+                <path d="M36.5,45 C40.2279221,45 43.6029221,46.511039 46.0459415,48.9540585 C48.488961,51.3970779 50,54.7720779 50,58.5 L50,58.5 L50,74 C50,75.1045695 49.5522847,76.1045695 48.8284271,76.8284271 C48.1045695,77.5522847 47.1045695,78 46,78 L46,78 L27,78 C25.8954305,78 24.8954305,77.5522847 24.1715729,76.8284271 C23.4477153,76.1045695 23,75.1045695 23,74 L23,74 L23,58.5 C23,54.7720779 24.511039,51.3970779 26.9540585,48.9540585 C29.3970779,46.511039 32.7720779,45 36.5,45 Z" id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#FFFFFF"></path>
+                <path d="M44,57.5 C44,53.3578644 40.6421356,50 36.5,50 C32.3578644,50 29,53.3578644 29,57.5" id="Oval" stroke="#C7DEDE"></path>
+                <rect id="Rectangle" stroke="#8AB4B4" stroke-width="2" fill="#FFFFFF" x="28" y="64" width="17" height="9" rx="2"></rect>
+                <path d="M59,40.4 C64.3333333,37.2 67,34 67,30.8 C67,28.128 64.856,26 62.2,26 C61.1333333,26 60.0666667,26.4 59,27.2 C57.9333333,26.4 56.8666667,26 55.8,26 C53.144,26 51,28.128 51,30.8 C51,34 53.6666667,37.2 59,40.4 Z" id="Oval" fill="#F1BF8C"></path>
+                <rect id="Rectangle" stroke="#C7DEDE" x="34.5" y="68.5" width="4" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
