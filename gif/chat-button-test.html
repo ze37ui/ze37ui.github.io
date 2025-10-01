@@ -3,8 +3,21 @@
 <style media="screen">
   body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin: 48px 0;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  section {
+    display: flex;
     flex-direction: row;
-    row-gap: 64px;
+    justify-content: center;
+    margin-bottom: 48px;
   }
 
   div {
@@ -14,23 +27,37 @@
   }
 
   img {
-    margin: 20px;
+    margin: 16px;
   }
 
   p {
     font-size: 12px;
-    text-align: center;
-    font-family: arial;
+    font-weight: 400;
+    margin: 0;
   }
 </style>
 <body>
-  <div>
-    <img width="52" src="https://raw.githubusercontent.com/ze37ui/ze37ui.github.io/refs/heads/master/gif/bronevik-chat-button.svg">
-    <p>SVG</p>
-  </div>
-  <div>
-    <img src="https://raw.githubusercontent.com/ze37ui/ze37ui.github.io/refs/heads/master/gif/FAB-final.gif">
-    <p>GIF</p>
-  </div>
+  Один раз
+  <section>
+    <div>
+      <img width="52" src="https://raw.githubusercontent.com/ze37ui/ze37ui.github.io/refs/heads/master/gif/bronevik-chat-button.svg">
+      <p>SVG</p>
+    </div>
+    <div>
+      <img src="https://raw.githubusercontent.com/ze37ui/ze37ui.github.io/refs/heads/master/gif/FAB-final.gif">
+      <p>GIF</p>
+    </div>
+  </section>
+  Бесконечно
+  <section>
+    <div>
+      <img width="52" src="https://raw.githubusercontent.com/ze37ui/ze37ui.github.io/refs/heads/master/gif/bronevik-chat-button-infinite.svg">
+      <p>SVG</p>
+    </div>
+    <div>
+      <img src="https://raw.githubusercontent.com/ze37ui/ze37ui.github.io/refs/heads/master/gif/bronevik-chat-button-infinite.gif">
+      <p>GIF</p>
+    </div>
+  </section>
 </body>
 </html>
