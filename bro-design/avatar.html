@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Бро Дизайн</title>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <style media="screen">
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 2fr 7fr 3fr;
+      }
+
+      section {
+        display: grid;
+      }
+
+      #bd-nav-fixed {
+        background: grey;
+        margin: 0.5rem;
+        height: calc(100vh - 1rem);
+        width: calc(100vw / 6)
+        position: fixed;
+      }
+
+      .bd-content {
+        display: grid;
+        grid-template-columns: 3fr;
+        justify-items: center;
+      }
+
+      .bd-content-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bd-avatar-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      #bd-avatar {
+        background: grey;
+        aspect-ratio: 1;
+      }
+
+      #bd-avatar-date {
+        display: none;
+      }
+
+      .bd-avatar-settings {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .bd-avatar-settings_background {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .bd-avatar-settings_background-item {
+        width: 4rem;
+        aspect-ratio: 1;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+      .bd-avatar-settings_background-item:hover {
+        transform: scale(1.1);
+      }
+
+      .date-section {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #dateInput {
+        padding: 8px;
+        font-size: 16px;
+        display: none;
+        cursor: pointer;
+      }
+
+      /* Календарь */
+      .calendar {
+        position: absolute;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        display: none;
+        z-index: 10;
+      }
+
+      .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .calendar-header button {
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        text-align: center;
+      }
+
+      .calendar-grid div {
+        padding: 6px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .calendar-grid div:hover {
+        background: #ffefcc;
+      }
+
+      .calendar-grid .empty {
+        cursor: default;
+        background: none;
+      }
+
+      .weekday {
+        font-weight: bold;
+        color: #666;
+        cursor: default;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="bd-nav">
+      <div id="bd-nav-fixed">
+        <div class="nav-row">
+          Главная
+        </div>
+        <div class="nav-row">
+          Аватарки для отпуска
+        </div>
+      </div>
+    </section>
+    <section class="bd-content">
+      <div class="bd-content-wrapper">
+        <h1>Аватарки для отпуска</h1>
+        <div class="bd-avatar-wrapper">
+          <div id="bd-avatar">
+            <div id="bd-avatar-date">
+              Выйду [Дата]
+            </div>
+          </div>
+          <div class="bd-avatar-settings">
+            <div class="bd-avatar-settings_background">
+              <div class="bd-avatar-settings_background-item" style="background: linear-gradient(135deg, #ff4500, #ffcc00)" data-bg="linear-gradient(135deg, #ff4500, #ffcc00)"></div>
+              <div class="bd-avatar-settings_background-item" style="background: linear-gradient(135deg, #00b4db, #0083b0)" data-bg="linear-gradient(135deg, #00b4db, #0083b0)"></div>
+              <div class="bd-avatar-settings_background-item" style="background: linear-gradient(135deg, #7f00ff, #e100ff)" data-bg="linear-gradient(135deg, #7f00ff, #e100ff)"></div>
+              <div class="bd-avatar-settings_background-item" style="background: linear-gradient(135deg, #11998e, #38ef7d)" data-bg="linear-gradient(135deg, #11998e, #38ef7d)"></div>
+              <div class="bd-avatar-settings_background-item" style="background: linear-gradient(135deg, #ff416c, #ff4b2b)" data-bg="linear-gradient(135deg, #ff416c, #ff4b2b)"></div>
+            </div>
+            <!-- Чекбокс с выбором даты -->
+            <div class="date-section">
+              <label><input type="checkbox" id="dateToggle"> Включить дату</label>
+              <input type="text" id="dateInput" readonly placeholder="Выберите дату">
+            </div>
+
+            <!-- Календарь -->
+            <div class="calendar" id="calendar"></div>
+            <button id="avatarDownload" class="bd-button bd-button-primary">Скачать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+
+    </section>
+  </body>
+  <script type="text/javascript">
+
+    const avatar = document.getElementById('bd-avatar');
+    const avatarDate = document.getElementById('bd-avatar-date');
+    const dateToggle = document.getElementById('dateToggle');
+    const dateInput = document.getElementById('dateInput');
+    const calendar = document.getElementById('calendar');
+
+    let currentYear, currentMonth;
+
+    document.querySelectorAll('.bd-avatar-settings_background-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const bg = btn.getAttribute('data-bg');
+        avatar.style.background = bg;
+      });
+    });
+
+    // 🗓️ Отображение поля даты при активации чекбокса
+    dateToggle.addEventListener('change', () => {
+      if (dateToggle.checked) {
+        dateInput.style.display = 'block';
+        avatarDate.style.display = 'block';
+      } else {
+        dateInput.style.display = 'none';
+        avatarDate.style.display = 'none';
+        calendar.style.display = 'none';
+      }
+    });
+
+    // 📅 Генерация календаря
+    function renderCalendar(year, month) {
+      currentYear = year;
+      currentMonth = month;
+
+      const monthNames = [
+        'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+      ];
+      const daysOfWeek = ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];
+
+      const firstDay = new Date(year, month, 1);
+      const lastDay = new Date(year, month + 1, 0);
+
+      let html = `
+        <div class="calendar-header">
+          <button id="prevMonth">◀</button>
+          <span>${monthNames[month]} ${year}</span>
+          <button id="nextMonth">▶</button>
+        </div>
+        <div class="calendar-grid">
+          ${daysOfWeek.map(d => `<div class="weekday">${d}</div>`).join('')}
+      `;
+
+      const startDay = (firstDay.getDay() + 6) % 7; // понедельник = 0
+      for (let i = 0; i < startDay; i++) html += `<div class="empty"></div>`;
+
+      for (let day = 1; day <= lastDay.getDate(); day++) {
+        html += `<div class="day" data-day="${day}">${day}</div>`;
+      }
+
+      html += `</div>`;
+      calendar.innerHTML = html;
+
+      // Навешиваем обработчики уже после вставки
+      document.getElementById('prevMonth').onclick = () => {
+        const newMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+        const newYear = currentMonth === 0 ? currentYear - 1 : currentYear;
+        renderCalendar(newYear, newMonth);
+      };
+      document.getElementById('nextMonth').onclick = () => {
+        const newMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+        const newYear = currentMonth === 11 ? currentYear + 1 : currentYear;
+        renderCalendar(newYear, newMonth);
+      };
+
+      calendar.querySelectorAll('.day').forEach(d => {
+        d.addEventListener('click', () => {
+          const selectedDate = new Date(year, month, d.dataset.day);
+          const formatted = selectedDate.toLocaleDateString('ru-RU');
+          dateInput.value = formatted;
+          avatarDate.textContent = formatted;
+          calendar.style.display = 'none';
+        });
+      });
+    }
+
+    // 🗓️ Открытие календаря
+    dateInput.addEventListener('click', () => {
+      const rect = dateInput.getBoundingClientRect();
+      calendar.style.top = `${rect.bottom + window.scrollY + 5}px`;
+      calendar.style.left = `${rect.left + window.scrollX}px`;
+      calendar.style.display = 'block';
+
+      const now = new Date();
+      renderCalendar(now.getFullYear(), now.getMonth());
+    });
+
+    document.getElementById('avatarDownload').addEventListener('click', async () => {
+      const canvas = await html2canvas(avatar, { backgroundColor: null });
+      const dataURL = canvas.toDataURL('image/png');
+
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      const dateStr = `${yyyy}-${mm}-${dd}`;
+
+      const link = document.createElement('a');
+      link.href = dataURL;
+      // link.download = `Аватар для отпуска ${dateStr}.png`;
+      link.download = 'Аватар для отпуска.png';
+      link.click();
+    });
+
+    // Закрытие календаря при клике вне
+    document.addEventListener('click', (e) => {
+      if (!calendar.contains(e.target) && e.target !== dateInput) {
+        calendar.style.display = 'none';
+      }
+    });
+
+    // ⚙️ Останавливаем закрытие при клике внутри календаря
+    calendar.addEventListener('click', (e) => e.stopPropagation());
+
+  </script>
+</html>
